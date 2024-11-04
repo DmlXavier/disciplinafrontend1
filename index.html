@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Horizon</title>
+
+    <style>
+        .banner {background: url(./imagens/fundo.jpg) no-repeat;}
+
+        .simbolos {border: 1px solid red;}
+
+        .grid-container {
+            display: grid;
+            width: fit-content;
+            gap: 5px;
+
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+            'A B'
+            'C D';
+        }
+
+        .grid-container img:first-child {grid-area: 'A';}
+
+        .grid-container img:nth-child(2) {grid-area: 'B';}
+
+        .grid-container img:nth-child(3) {grid-area: 'C';}
+
+        .grid-container img:last-child {grid-area: 'D';}
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="./index.html" target="_blank">
+            <img id="logo" src="./imagens/logo_site.png" alt="logo">
+        </a>
+
+        <ul>
+            <li><a href="./index.html" target="_blank" class="link_de_navegacao">PÁGINA INICIAL</a></li>
+            <li><a href="./paginas/aluguel.html" target="_blank" class="link_de_navegacao">ALUGUEL DE IATES</a></li>
+            <li><a href="./paginas/destinos.html" target="_blank" class="link_de_navegacao">DESTINOS</a></li>
+            <li><a href="./paginas/tripulacao.html" target="_blank" class="link_de_navegacao">TRIPULAÇÃO</a></li>
+            <li><a href="./paginas/contato.html" target="_blank" class="link_de_navegacao">CONTATO</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="banner">
+            <h2>Navegue além do horizonte,<br>em luxo sem limites.</h2>
+
+            <div class="banner-subtext">
+                <img class="simbolos" src="./imagens/barquinho.jpg" alt="simbolo de um iate">
+
+                <p>Ligue agora para agendar as férias de sua vida: <span>(83) 3257-8965</span></p>
+            </div>
+        </div>
+
+        <div class="main-info">
+            <div class="info">
+                <div class="info-title-container">
+                    <img src="./imagens/bussola.jpg" alt="bussola" class="volantes simbolos">
+
+                    <h2>Destinos:</h2>
+                </div>
+
+                <h3>Roteiros Sofisticados para Aventuras Paradisíacas</h3>
+
+                <p>
+                    Você vai amar os nossos destinos exclusivos, cuidadosamente curados pelas nossa equipe para lhe oferecer as melhores experiências navegáveis do mundo; 
+                    desde as turquesas águas do Caribe, até as históricas costas do mar Mediterrâneo - onde cada um dos nossos destinos convidam a descobrir paisagens impressionantes, 
+                    fascinantes culturas e momentos inesquecíveis. Navegue conosco e viva a aventura dos seus sonhos!
+                </p>
+
+                <img src="./imagens/img destino.jpg" alt="destino">
+            </div>
+            
+            <div class="info">
+                <div class="info-title-container">
+                    <img src="./imagens/leme.jpg" alt="leme" class="volantes simbolos">
+
+                    <h2>Nossa Frota:</h2>
+                </div>
+
+                <h3>Onde o Design e o Desempenho se Encontram</h3>
+
+                <p>
+                    Você poderá escolher dentre nossos cinco modelos exclusivos de iates <i>(Sunseeker Predator 108, Benetti Classic 121, Azimut 72, Ferretti 850 e Princess Y85)</i> 
+                    cada um projetado para oferecer uma experiência de conforto e luxo, incomparáveis; independente da sua preferência ser voltada para: agilidade, tamanho ou 
+                    elegância. Nossa frota conta com diversas opções para melhor se adaptar as necessidades de nossos clientes; toda a nossa frota está equipada com tecnologia de 
+                    ponta, interiores sofisticados e amplas áreas externas para desfrutar do sol e das vistas panorâmicas que apenas destinos exóticos podem oferecer.
+                </p>
+
+                <div class="grid-container">
+                    <img src="./imagens/frota14.jpg" alt="frota14">
+
+                    <img src="./imagens/frota23.jpg" alt="frota23">
+
+                    <img src="./imagens/frota23.jpg" alt="frota23">
+
+                    <img src="./imagens/frota14.jpg" alt="frota14">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 por Blue Horizon - Aluguel de Iates</p>
+    </footer>
+</body>
+</html>
